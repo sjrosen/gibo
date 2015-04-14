@@ -23,7 +23,7 @@
 
 _gibo()
 {
-    local_repo="$HOME/.gitignore-boilerplates"
+    local_repo="$HOME/.config/gibo"
     if [ -e "$local_repo" ]; then
         compadd -M 'm:{[:lower:]}={[:upper:]}' $( find "$local_repo" -name "*.gitignore" -exec basename \{\} .gitignore \; )
     fi
